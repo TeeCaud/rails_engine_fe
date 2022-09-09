@@ -6,5 +6,6 @@ class MerchantsController < ApplicationController
 
   def show
     @merchant = MerchantsFacade.get_merchant(params[:id])
+    binding.pry
   end
 end
